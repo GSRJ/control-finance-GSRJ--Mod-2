@@ -73,6 +73,7 @@ noValueText.innerText = "Registre novo valor";
       inputSelectedBtn.forEach((obj) => {
         ul.appendChild(generateLiValue(obj));
       });
+      renderSum.innerText = "Entradas"
     });
 
     let outputSelectedBtn = insertedValues.filter((obj3) => {
@@ -85,6 +86,7 @@ noValueText.innerText = "Registre novo valor";
       outputSelectedBtn.forEach((obj) => {
         ul.appendChild(generateLiValue(obj));
       });
+      renderSum.innerText = "Saídas"
     });
 
     let allSelectedBtn = insertedValues.filter((obj) => {
@@ -97,6 +99,7 @@ noValueText.innerText = "Registre novo valor";
       allSelectedBtn.forEach((obj) => {
         ul.appendChild(generateLiValue(obj));
       });
+      renderSum.innerText = "R$ " + somaValores;
     });
   }
 
