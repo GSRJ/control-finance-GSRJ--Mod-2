@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+li {
+  list-style: none;
+}
 :root {
   --color-brand-1: #6741d9;
   --color-brand-2: #4c3299;
@@ -41,18 +43,45 @@
   --font-family-2: "Nunito", sans-serif;
 }
 
-body {
-  font-family: var(--font-family-1);
-}
-
 .container {
-  max-width: 43rem;
-  margin: 0 auto;
+  font-family: var(--font-family-1);
+  color: var(--color-grey-1);
 }
 
-@media (max-width: 700px) {
+
+
+@media (min-width: 700px) {
   .container {
-    max-width: 43rem;
-    margin: 0 1rem;
+    margin: 0 auto;
+    max-width: 75rem;
   }
+  .logoBox {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sumValue {
+    width: 96%;
+    padding: 1rem;
+  }
+  .valueTypeBox {
+    flex-direction: row;
+  }
+  .cancelContinueBox{
+    display: flex;
+    width: 60%;
+    align-self:flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
 }
+.cancelButton,
+.insertButton {
+  width:auto;
+}
+}
+

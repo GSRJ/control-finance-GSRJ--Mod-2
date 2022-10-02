@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <link rel="stylesheet" href="./styles/buttonStyle.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/modalStyle.css" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+  </head>
+  <body class="container">
+    <div class="modal">
+      <section class="modalWhiteBox">
+        <div class="modalHeader">
+          <h2>Registro de valor</h2>
+          <button data-control-modal="modalLogin" class="buttonGrey">X</button>
+        </div>
+        <div class="inputAreaBox">
+          <p>
+            Digite o valor e em seguida aperte no botão referente ao tipo do
+            valor
+          </p>
+          <h3 class="subtitle">Valor</h3>
+          <input
+            id="itemImput"
+            type="text"
+            placeholder=" R$ 00,00"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+          />
+        </div>
+        <div class="valueTypeBox">
+          <h3 class="subtitle">Tipo de valor</h3>
+          <button class="whiteButton inputCategory" for="categoryBtn"
+            >Entrada</button
+          >
+          <button class="whiteButton outputCategory" for="categoryBtn"
+            >Saída</button
+          >
+        </form>
+        </div>
+        <div class="cancelContinueBox">
+          <button
+            data-control-modal="modalClose"
+            class="buttonGrey cancelButton"
+          >
+            Cancelar
+          </button>
+          <button data-control-modal="modalLogin" id="addItem" class="purpleButton insertButton">
+            Inserir valor
+          </button>
+        </div>
+      </section>
+    </div>
+    <header>
+      <div class="logoBox">
+        <h1>Control <span>Finance</span></h1>
+        <button
+          data-control-modal="modalLogin"
+          class="purpleButton"
+          type="button"
+        >
+          Registrar novo valor
+        </button>
+      </div>
+    </header>
+    <main>
+      <nav class="navigation">
+        <h2>Resumo financeiro</h2>
+        <div class="navButtonsContainer">
+          <button class="whiteButton all">Todos</button>
+          <button class="whiteButton inputSelected">Entradas</button>
+          <button class="whiteButton outputSelected">Saídas</button>
+        </div>
+      </nav>
+      <section class="sectionSum">
+        <div class="sumValueBox">
+          <h3>Soma dos valores</h3>
+        </div>
+      </section>
+      <section class="cardsBox">
+        <ul id="cardList">
+        </ul>
+      </section>
+    </main>
+    <script src="./scripts/valuesData.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

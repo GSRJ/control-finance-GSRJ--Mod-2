@@ -1,0 +1,98 @@
+.logoBox {
+  display: flex;
+  flex-direction: column;
+  min-height: 15vh;
+  padding: 1.5rem;
+  gap: 1.25rem;
+  background-color: var(--color-grey-5);
+}
+.logoBox > h1 {
+  color: var(--color-brand-1);
+  font-weight: var(--font-weight-1);
+  line-height: 1.5rem;
+}
+.logoBox > h1 > span {
+  color: var(--color-grey-1);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.38rem;
+  padding: 1.5rem;
+}
+
+.navButtonsContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.navigation > h2 {
+  font-weight: var(--font-weight-2);
+}
+
+.sectionSum {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.sumValueBox {
+  background-color: var(--color-grey-4);
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 1rem;
+  border-radius: var(--radius-1);
+  font-weight: var(--font-weight-2);
+}
+
+.cardsBox {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.cardsBox > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardValue {
+  display: flex;
+  justify-content: space-between;
+  border: 0.1rem solid var(--color-grey-5);
+  border-radius: var(--radius-1);
+  padding: 0.5rem 1rem;
+}
+
+.cardValue > p {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.cardValue > span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  width: 50%;
+}
+
+.noValueBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-grey-4);
+  border: 1px dashed var(--color-grey-1);
+  border-radius: var(--radius-1);
+  height: 5rem;
+  line-height: var(--font-line-height-1);
+
+}
